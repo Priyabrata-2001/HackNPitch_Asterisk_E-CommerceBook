@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="scrollMenu.css">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <h1 style="text-align: center;">ADD BOOKS (Demo Page)</h1>
+
+</head>
+
+<div class="container">
+
+    <style>
+        .success,
+        .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+    </style>
+
+    <br><br>
+    <div class="notice">
+        <h2>Please read this notice before proceeding:-</h2>
+        <br>
+        <div class="notice-body" style="border:3px solid black; background-color: darksalmon; padding: 3%;">
+            <h1 style="text-align: center;"><strong><u>Notice</u></strong></h1>
+            <p style="font-size: 22px;"><strong>This is to inform you that this web page is made only as a
+                    demo page and is not included in our official website.
+                    Since we do not have any database of books to load
+                    books information to show it on the home page, search results, etc of our website. Hence we
+                    request you to
+                    add some books information here so that we can process that data to use it on our official
+                    website.</strong>
+            </p>
+        </div>
+    </div><br>
+
+    <!-- <h1 style="text-align: center;">Sell Books</h1> -->
+
+    <article class="add-book mb-8 my-4">
+
+        <div class="card-body" style="border:1px solid black;">
+
+
+            <h2 class="card-title mb-4">Add book information</h2>
+            <div class="cont">
+                <form id="book-form" class="row">
+
+                    <div class="col-md-6 my-2">
+                        <label for="inputTitle" class="form-label"><strong>Title :</strong></label>
+                        <input type="text" class="form-control" id="title" placeholder="Type here">
+                    </div>
+
+                    <div class="col-md-6 my-2">
+                        <label for="inputAuthor" class="form-label"><strong>Author :</strong></label>
+                        <input type="text" class="form-control" id="author" placeholder="Type here">
+                    </div>
+
+                    <div class="col-md-6 my-2">
+                        <label for="inputISBN" class="form-label"><strong>ISBN :</strong></label>
+                        <input type="text" class="form-control" id="isbn">
+                    </div>
+
+                    <div class="col-md-6 my-2">
+                        <p><label for="inputPrice" class="form-label"><strong>Price :</strong></label>
+                            <input type="text" class="form-control" id="Price">
+                    </div>
+
+                    <div class="col-12 d-flex flex-column flex-md-row justify-content-md-between my-2">
+                        <div class="d-grid gap-2 col-md-6">
+                            <p><label for="imageFile"><strong> Select the book image : </strong></label>
+                                <input type="file" id="FileInput" accept="image/x-png,image/gif,image/jpeg" />
+                            </p>
+                        </div><br>
+                        <div class="d-grid gap-2 col-md-2">
+                            <button type="submit" class="btn btn-primary" id="submit"
+                                value="Submit"><strong>Submit</strong></button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div> <!-- card-body -->
+
+    </article><!-- card-body -->
+
+    <!-- Book Selling Card -->
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <table class="u-full-width">
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <section class="py-5 text-center container">
+        <div class="mx-auto">
+            <h4 style="color:red"><strong>Please add information of atleast 4 books before proceeding to official
+                    website</strong></h4>
+            <a href="home.html" class="btn btn-success my-2">Continue to official website</a>
+        </div>
+    </section>
+
+
+
+</div>
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+<script src="bootstrap.bundle.min.js"></script>
+<script src="jquery-2.0.0.min.js"></script>
+<script src="script.js"></script>
+<script src="appes7.js"></script>
+
+</html>

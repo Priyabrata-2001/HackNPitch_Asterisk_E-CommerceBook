@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="stylefooter.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="scrollMenu.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="color: rgb(118, 250, 114);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Books 'n Books</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="sell_book.html">Sell Books</a></li>
+                            <li><a class="dropdown-item" href="donate.html">Donate Books</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex col-8">
+                    <input href="#" class="form-control me-2" id="task" name="Search" type="text"
+                        placeholder="Search for books" aria-label="Search" onkeyup="searchFunc()">
+                    <a class="btn btn-outline-success" href="SearchResult.html" role="button">Search</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <script>
+        const searchFunc=() =>{
+            localStorage.removeItem("Search");
+            let input = document.getElementById('task').value.toUpperCase();
+            console.log(input);
+            localStorage.setItem("Search",input);
+        }
+    </script> 
+
+   
+</head>
+
+<body>
+    
+
+    <br>
+    <br>
+    <br>
+    
+    <style>
+        a:link {
+            color: rgb(34, 32, 32);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(26, 24, 24);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0c0b0b;
+            background-color: transparent;
+        }
+        a:active {
+            color: GREEN;
+            background-color: transparent;
+        }
+        </style>
+        
+    
+ 
+
+   
+    <div class="container">
+        <p style="font-size: 34px; text-align: center;">Category products</p>
+        <a href="PRODUCT.html">
+            <div class="flex-container">
+        <table class="u-full-width" >
+            <thead>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    </a>
+    
+    </div>
+
+
+    <br>
+
+
+    <footer>
+        <div class="rows">
+            <div class="col">
+                <h3>BnB<div class="underline"><span></span></div>
+                </h3>
+                <p>About Us </p>
+                <p>Our Services</p>
+                <p>Privacy Policy</p>
+                <p>Affilate Program</p>
+
+            </div>
+            <div class="col">
+                <h3>Help<div class="underline"><span></span></div>
+                </h3>
+                <p>shipping</p>
+                <p>Returns</p>
+                <p>Order Status</p>
+                <p>Payment Partners</p>
+            </div>
+            <div class="col">
+                <h3>Category<div class="underline"><span></span></div>
+                </h3>
+                <p>Action and Adventure</p>
+                <p>Classics</p>
+                <p>Comics and Graphic Novel</p>
+                <p>Fantasy</p>
+                <p>Horror</p>
+            </div>
+            <div class="col">
+                <div class="social-icons">
+                    <h3>Follow Us<div class="underline"><span></span></div>
+                    </h3>
+                    <a href="https://facebook.com" id="one"><i class="fab fa-facebook-f "></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <hr>
+            <div class="hr-text">
+                Book n Books @ 2021-'30 - All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+
+    <script src="SEARCH.js"></script>
+    <script src="Multibuttonlogic.js"></script>
+</body>
+
+</html>

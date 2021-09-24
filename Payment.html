@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="nav bar.css">
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="line h1 navbar-brand text-dark" href="#">Books 'n Books</a>
+            
+        </div>
+
+    </nav>
+    <br>
+</head>
+
+<body>
+
+    <div class="container my-1">
+
+        <h2>Product order details</h2>
+        <small class="label-policy text-muted">By placing your order, you agree to books 'n books privacy policy and
+            conditions of use </small>
+
+        <article class="card mb-4 my-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h3 class="card-title mb-4">Delivery information</h3>
+                    <form action="">
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label>Frst name</label>
+                                <input type="text" placeholder="Type here" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Last name</label>
+                                <input type="text" placeholder="Type here" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Phone</label>
+                                <input type="text" value="+91" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Email</label>
+                                <input type="email" placeholder="example@gmail.com" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>City</label>
+                                <input type="email" placeholder="Type here" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label>Address</label>
+                                <input type="email" placeholder="Type here" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-10">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked="">
+                            <span>
+                                Check this box to submit your delivery information
+                            </span>
+                        </div>
+                        <!-- row.// -->
+                    </form>
+                </div> <!-- card-body.// -->
+            </div>
+        </article>
+
+
+        <div class="row">
+
+            <aside class="col-md-6 my-2">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4">Payment information</h3>
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="username">Name on card</label>
+                                <input type="text" class="form-control" name="username" placeholder="" required="">
+                            </div> <!-- form-group.// -->
+
+                            <div class="form-group">
+                                <label for="cardNumber">Card number</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="cardNumber" placeholder="">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="fab fa-cc-visa"></i> &nbsp; <i class="fab fa-cc-amex"></i> &nbsp;
+                                            <i class="fab fa-cc-mastercard"></i>
+                                        </span>
+                                    </div>
+                                </div> <!-- input-group.// -->
+                            </div> <!-- form-group.// -->
+                            <div class="row">
+                                <div class="col-md flex-grow-0">
+                                    <div class="form-group">
+                                        <label><span class="hidden-xs">Expiration</span> </label>
+                                        <div class="form-inline" style="min-width: 220px">
+                                            <select class="form-control" style="width:100px">
+                                                <option>MM</option>
+                                                <option>01 (Jan)</option>
+                                                <option>02 (Feb)</option>
+                                                <option>03 (Mar)</option>
+                                                <option>04 (Apr)</option>
+                                                <option>05 (May)</option>
+                                                <option>06 (Jun)</option>
+                                                <option>07 (Jul)</option>
+                                                <option>08 (Aug)</option>
+                                                <option>09 (Sep)</option>
+                                                <option>10 (Oct)</option>
+                                                <option>11 (Nov)</option>
+                                                <option>12 (Dec)</option>
+                                            </select>
+                                            <span style="width:20px; text-align: center"> / </span>
+                                            <select class="form-control" style="width:100px">
+                                                <option>YY</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
+                                                <option>2024</option>
+                                                <option>2025</option>
+                                                <option>2026</option>
+                                                <option>2027</option>
+                                                <option>2028</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label data-toggle="tooltip" title=""
+                                            data-original-title="3 digits code on back side of the card">CVV</label>
+                                        <input class="form-control" required="" type="text">
+                                    </div> <!-- form-group.// -->
+                                </div>
+                            </div> <!-- row.// -->
+                            <div class="form-group col-sm-12">
+                                <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked="">
+                                <span>
+                                    Check this box to submit your payment information
+                                </span>
+                            </div>
+                        </form>
+                    </div> <!-- card-body.// -->
+                </div>
+            </aside>
+
+            <aside class="col-md-3 my-2 details">
+
+
+            </aside>
+
+            <aside class="col-md-3 my-2 price">
+                
+            </aside>
+
+
+        </div>
+
+        <section class="text-center my-4">
+            <a href="home.html" class="h6 link">Return to home page</a>
+        </section>
+
+
+    </div>
+
+
+    <hr class="featurette-divider">
+    <div class="copyrightText d-flex justify-content-center mb-3">
+        <p>Copyright © 2021-2030 Books 'n Books Inc. All Rights Reserved.</p>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+<script src="bootstrap.bundle.min.js"></script>
+<script src="jquery-2.0.0.min.js"></script>
+<script src="script.js"></script>
+<script src="Payment.js"></script>
+</html>

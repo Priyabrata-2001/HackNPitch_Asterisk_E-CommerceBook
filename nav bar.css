@@ -1,0 +1,50 @@
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+.navbar-brand:hover{
+    color: black;
+
+}
+.nav-link active{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: blueviolet;
+    font-family: 'Glory', sans-serif;
+    text-transform: uppercase;
+    
+}
+.navbar-nav active:hover{
+    color: blueviolet;
+
+}
+.search1{
+    height: 40px;
+    width: 100%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    font-family:'Glory', sans-serif;
+    border: 2px solid rgb(248, 26, 92);
+}
+.btn-outline-success{
+    height: 40px;
+    width: 15%;
+    outline: none;
+    border: none;
+    background: rgb(248, 26, 92);    
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;    
+}
+
+.col-4 img{
+    width: 100%;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.font-ant{
+font-family: 'Anton', sans-serif;
+}

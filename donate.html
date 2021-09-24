@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="d-style.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="stylefooter.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stty">
+    <link rel="stylesheet" href="donate.css">
+    <title>DONATE NOW</title>
+    <script src="https://kit.fontawesome.com/ce3f28ee25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scrollMenu.css">
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <link rel="stylesheet" href="ui.css">
+
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="color: rgb(0, 0, 0);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Books 'n Books</a>
+            <p class="font-ant" href="#"><strong>Donate</strong></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="sell_book.html">Sell Books</a></li>
+                            <li><a class="dropdown-item" href="donate.html">Donate Books</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex col-8">
+                    <input href="#" class="form-control me-2" id="task" name="Search" type="text"
+                        placeholder="Search for books" aria-label="Search" onkeyup="searchFunc()">
+                    <a class="btn btn-outline-success" href="SearchResult.html" role="button">Search</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <script>
+        const searchFunc = () => {
+            localStorage.removeItem("Search");
+            let input = document.getElementById('task').value.toUpperCase();
+            console.log(input);
+            localStorage.setItem("Search", input);
+        }
+    </script>
+    
+  
+
+    <br>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="C:\Users\HP\OneDrive\Desktop\Asterisk\d2.jpg" class="d-block w-100" width="1600" height="600">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\HP\OneDrive\Desktop\Asterisk\d-card3.jpg" class="d-block w-100" width="1600" height="600">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\HP\OneDrive\Desktop\Asterisk\d-card4.jpg" class="d-block w-100" alt="..." width="1600" height="600">
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <br>
+  
+    <div class="container text-center" style="justify-content: center;">
+        <h2>Donation</h2>
+    </div>
+    
+    
+    
+
+    
+        
+        <!-- <div class="row" style="color: rosybrown;">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <h1 class="text-center mt-5 font-weight-bold">Donate Books</h1>
+                <hr class="bg-white">
+                <h3 class="mt-4">Please, Fill out the form to donate books</h3>
+
+
+
+            </div>
+        </div> -->
+
+        <!-- <div class="row" style="color: rosybrown;">
+            <div class="col-md-1"></div>
+            <label class="col-md-4">Full Name*<br>
+                <input type="text" id="text" required="" placeholder="aaa bbb bbb"></label>
+
+            <label class="col-md-4">Email*<br>
+                <input type="text" id="text" required="" placeholder="theprovider@gmail.com"></label>
+        </div> -->
+
+        <!-- <div class="row">
+            <div class="col-md-2"></div>
+            <label class="col-md-4" style="color: rosybrown;">Name of The Book You Want to Donate*<br>
+                <input type="number" id="text" required="" placeholder="NAME: abc   AUTHOR: xyz"></label>
+
+            <label class="col-md-6" style="color: rosybrown;"><br>Phone*<br>
+                <input type="number" id="text" required="" placeholder="+92123456789"></label>
+        </div> -->
+
+        <!-- <div class="row" style="color: rosybrown;">
+            <div class="col-md-2" ></div>
+            <label class="col-md-8">Message*<br>
+                <textarea id="message" required="" placeholder="Write yor message here" cols="48"
+                    rows="5"></textarea></label>
+        </div> -->
+
+        <!-- <div class="row">
+            <div class="col-md-2"></div>
+                <form class="d-flex col-8">
+                    <button class="btn btn-outline-success text-center" type="submit">Submit</button>
+                </form>
+            </div>
+        </form>
+    </div> -->
+    <div class="container" style="font-family: sans-serif;">
+        <p>Even in today’s high-tech world, traditional hard copy books still have the amazing ability to offer inspiration, insight and education. And sometimes, there’s just nothing better than holding a book in your hand, rather than a cell phone or a tablet.
+            <br>
+            <br>
+            <strong>Be Thoughtful-Tips on Donating Used Books</strong>
+            <br>
+            <br>
+            But what if you have too many books that you no longer need? Then it may be time to let them find new owners!<br>
+            If you are interested in donating books to countries overseas, there are several organizations that distribute books to other countries. Many of these organizations distribute books overseas at no cost to the donating person or library other than shipping costs to the U.S. facility.
+            Be aware however, that most organizations only accept new books or books in good condition-these are not places to "book dump" unwanted literature. Books that are outdated, damaged, and worthless are going to be just as useless abroad. Make sure that the information is going to be useful to the schools or people receiving them and that the information is in a language that they can read and understand. Finally, the materials must be culturally appropriate for the audience that is going to receive them.
+            <br>
+            Below are some fantastic reasons why you should donate good quality used books to the Books 'n Books!
+            <br>
+            <br>
+            <strong>DONATING GOOD BOOKS GIVES THEM EXTRA PURPOSE</strong>
+            <br>
+            <br>
+            Yes, even those you cherish so much and would have a hard time parting with!
+            <br>
+            When you donate your books, you allow the opportunity to let those texts have new life. Whether they end up in the hands of a young teen looking for an exciting new story to read, or they become part of a collection on someone else’s shelf, donating your books expands their purpose and influence in a fascinating way.
+            <br>
+            <br>
+            <strong>YOU CAN SUPPORT YOUR LOCAL LIBRARY SYSTEM BY DONATING YOUR OLD BOOKS</strong>
+            <br>
+            <br>
+            If you donate good books to <strong>Books 'n Books</strong>, you are — in effect — supporting all of our public libraries.
+            
+            We collect these books (and good quality CDs, DVDs and vinyl records!) for our book sales, which helps raise money in support of early childhood literacy, technology, education and other programs held at various libraries in our system. And for those that are rare collectibles or vintage books, we are happy to sell them online via our Books 'n Books' — to increase the monies we raise in support of Jefferson County Public Library!
+            <br>
+            <br>
+            <strong>IT’S TIME FOR SPRING CLEANING</strong>
+            <br>
+            <br>
+            Have a few (or a bunch) of great books sitting on a shelf? Clear out the space by bringing in books by the box-load at our donation center in Wheat Ridge!
+            
+            Or if you’re downsizing into a new home, consider going through your book cases to see which ones you think others will love reading as much as you did.
+            
+            PLUS, your contributions are tax deductible, and we will give you a receipt for your tax purposes!
+            
+            It’s a win-win for everyone.
+            <br>
+            <br>
+            <strong>READY TO DONATE?</strong>
+            <br>
+            <br>
+            Follow the instruction below..........
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="d-card1.jpeg" width="270" height="270">
+            </div>
+            <div class="content">
+                <p>"Old books, you know well, are books of the world's youth, and new books are the fruits of its age."</p>
+                <p> — Oliver Wendell</p>
+            </div>
+        </div> 
+        <div class="card">
+            <div class="imgBx">
+                <img src="d-card2.jfif" width="270" height="270">
+            </div>
+            <div class="content">
+                <p> “I Know That The Last Thing A Book Wants Is To Just Sit Around Unread, Serving As An Element Of Interior Decorating.If I Am Really Ambitious, I Pack Books Into Boxes And Donate Them To Prisons.”
+                    — Barbara Ehrenreich</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="d-card5.jpg">
+            </div>
+            <div class="content">
+                <p>"Help others without any reason and give without the expectation of receiving anything in return."</p>
+                <p> — Roy T. Bennett"</p>
+            </div>
+        </div>
+    </div>
+
+        <br>
+        <br>
+        <br>
+
+
+
+    <!-- added by sanglap -->
+    
+    <!-- donation form -->
+    <!-- <div class="donation-form-title-container">
+        <div class="donation-form-title" style="color:black;font-weight: 200;font-family: sans-serif;">
+            <h2>Donate Here</h2>
+        </div>
+        <div class="donation-form-description">
+            *Please, Fill out the form to donate books
+        </div>
+    </div>
+    
+    <div class="form-container">
+        
+        
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="form-details-text">Full Name* </span>
+                    <input type="text", placeholder="Ravi Sharma" required>
+                </div>
+                <div class="input-box">
+                    <span class="form-details-text">Email ID*</span>
+                    <input type="text", placeholder="xyz@gmail.com" required>
+                </div>
+                <div class="input-box">
+                    <span class="form-details-text">Name of book*</span>
+                    <input type="text", placeholder="NMAE : ABC  AUTHOR : XYZ" required>
+                </div>
+                <div class="input-box">
+                    <span class="form-details-text">Phone Number* </span>
+                    <input type="text", placeholder="9933452651" required>
+                </div>
+                <div class="input-box">
+                    <span class="form-details-text">Massage* </span>
+                    <input type="text" id="massage-box" placeholder="Write your massage here">
+                </div>
+            </div>
+            <div class="submit-form-button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        
+    </div> -->
+    <!-- <div class="container"> -->
+
+        <!-- <h1 style="text-align: center;">Sell Books</h1> -->
+
+        <article class="book-card mb-8 my-4">
+
+            <div class="card-body">
+
+
+                <h2 class="card-title mb-4">Add book information</h2>
+                <div class="cont">
+                    <form id="book-form" class="row">
+
+                        <div class="col-md-6 my-2">
+                            <label for="inputTitle" class="form-label"><strong>Title :</strong></label>
+                            <input type="text" class="form-control bg-secondary bg-opacity-10" id="title"
+                                placeholder="Type here">
+                        </div>
+
+                        <div class="col-md-6 my-2">
+                            <label for="inputAuthor" class="form-label"><strong>Author :</strong></label>
+                            <input type="text" class="form-control bg-secondary bg-opacity-10" id="author"
+                                placeholder="Type here">
+                        </div>
+
+                        <div class="col-md-6 my-2">
+                            <label for="inputISBN" class="form-label"><strong>ISBN :</strong></label>
+                            <input type="text" class="form-control bg-secondary bg-opacity-10" id="isbn">
+                        </div>
+
+                        <div class="col-md-6 my-2">
+                            <p><label for="inputPrice" class="form-label"><strong>Price :</strong></label>
+                                <input type="text" class="form-control bg-secondary bg-opacity-10" id="Price">
+                        </div>
+
+                        <div class="col-12 d-flex flex-column flex-md-row justify-content-md-between my-2">
+                            <div class="d-grid gap-2 col-md-6">
+                                <p><label for="imageFile"><strong> Select the book image : </strong></label>
+                                    <input type="file" id="FileInput" accept="image/x-png,image/gif,image/jpeg" />
+                                </p>
+                            </div><br>
+                            <div class="d-grid gap-2 col-md-2">
+                                
+                                <button type="submit" class="btn btn-outline-primary" id="submit"
+                                    value="Submit"><strong>Submit</strong></button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div> <!-- card-body -->
+
+        </article><!-- card-body -->
+
+        <!-- Book Selling Card -->
+
+        
+        <div class="scroll-bg">
+            <h2 style="text-align: center">Added books will appear here</h2>
+            <hr>
+            <div class="scroll-div">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <table class="u-full-width">
+                            <tbody id="book-list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- </div> -->
+    <!-- footer -->
+
+    <footer>
+        <div class="rows">
+            <div class="col">
+                <h3>BnB<div class="underline"><span></span></div></h3>
+                <p>About Us </p>
+                <p>Our Services</p>
+                <p>Privacy Policy</p>
+                <p>Affilate Program</p>
+                
+            </div>
+            <div class="col">
+                <h3>Help<div class="underline"><span></span></div></h3>
+                <p>shipping</p>
+                <p>Returns</p>
+                <p>Order Status</p>
+                <p>Payment Partners</p>
+            </div>
+            <div class="col">
+                <h3>Category<div class="underline"><span></span></div></h3>
+                <p>Action and Adventure</p>
+                <p>Classics</p>
+                <p>Comics and Graphic Novel</p>
+                <p>Fantasy</p>
+                <p>Horror</p>
+            </div>
+            <div class="col">
+                <div class="social-icons">
+                    <h3>Follow Us<div class="underline"><span></span></div></h3>
+                    <a href="https://facebook.com" id="one"><i class="fab fa-facebook-f "></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <hr>
+            <div class="hr-text">
+                Book n Books @ 2021-'30 - All Rights Reserved 
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+<script src="Donate.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+

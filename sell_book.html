@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="sellBook_reviews.css">
+    <link rel="stylesheet" href="scrollMenu.css">
+    <link rel="stylesheet" href="./stylefooter.css">
+    <link rel="stylesheet" href="home.css">
+
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Books 'n Books</a>
+            <p class="font-ant" href="#"><strong>Sell</strong></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Sell Books</a></li>
+                            <li><a class="dropdown-item" href="donate.html">Donate Books</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex col-8">
+                    <input href="#" class="form-control me-2" id="task" name="Search" type="text"
+                        placeholder="Search for books" aria-label="Search" onkeyup="searchFunc()">
+                    <a class="btn btn-outline-success" href="SearchResult.html" role="button">Search</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <script>
+        const searchFunc=() =>{
+            localStorage.removeItem("Search");
+            let input = document.getElementById('task').value.toUpperCase();
+            console.log(input);
+            localStorage.setItem("Search",input);
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <br>
+
+    <style>
+        .success,
+        .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+    </style>
+
+    <div class="container">
+
+        <div class="row align-items-md-stretch">
+            <h1>Why sell on <strong>Books 'n Books</strong> ?</h1>
+            <div class="col-md-4 my-3">
+                <div class="sell-page-card-1 h-100 p-5 text-dark bg-white rounded-4">
+                    <h3 class="line" style="font-family: Comic Sans MS">Unbeatable reach</h3>
+                    <p style="font-size: 16px"><strong>Reach thousands of customers on Books 'n Books, India's most
+                            visited book shopping destination.</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="sell-page-card-2 h-100 p-5 text-dark bg-white rounded-4">
+                    <h3 class="line" style="font-family: Comic Sans MS">Stress-free delivery</h3>
+                    <p style="font-size: 16px"><strong>Deliver to 100% of India's serviceable pincodes, through Easy
+                            Ship & Fulfillment by Books 'n Books</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="sell-page-card-3 h-100 p-5 text-dark bg-white rounded-4">
+                    <h3 class="line" style="font-family: Comic Sans MS">Timely payments</h3>
+                    <p style="font-size: 16px"><strong>Books 'n Books ensures your payments are deposited directly in
+                            your bank account within 7-14 days.</strong></p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
+        <article class="book-card mb-8 my-4">
+
+            <div class="card-body">
+
+
+                <h2 class="card-title mb-4">Add book information</h2>
+                <div class="cont">
+                    <form id="book-form" class="row">
+
+                        <div class="col-md-6 my-2">
+                            <label for="inputTitle" class="form-label"><strong>Title :</strong></label>
+                            <input type="text" class="form-control bg-secondary bg-opacity-10" id="title"
+                                placeholder="Type here">
+                        </div>
+
+                        <div class="col-md-6 my-2">
+                            <label for="inputAuthor" class="form-label"><strong>Author :</strong></label>
+                            <input type="text" class="form-control bg-secondary bg-opacity-10" id="author"
+                                placeholder="Type here">
+                        </div>
+
+                        <div class="col-md-6 my-2">
+                            <label for="inputISBN" class="form-label"><strong>ISBN# :</strong></label>
+                            <input type="text" class="form-control bg-secondary bg-opacity-10" id="isbn">
+                        </div>
+
+                        <div class="col-md-6 my-2">
+                            <p><label for="inputPrice" class="form-label"><strong>Price($) :</strong></label>
+                                <input type="text" class="form-control bg-secondary bg-opacity-10" id="Price">
+                        </div>
+
+                        <div class="col-12 d-flex flex-column flex-md-row justify-content-md-between my-2">
+                            <div class="d-grid gap-2 col-md-6">
+                                <p><label for="imageFile"><strong> Select the book image : </strong></label>
+                                    <input type="file" id="FileInput" accept="image/x-png,image/gif,image/jpeg" />
+                                </p>
+                            </div><br>
+                            <div class="d-grid gap-2 col-md-2">
+                                <button type="submit" class="btn btn-outline-primary" id="submit"
+                                    value="Submit"><strong>Submit</strong></button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div> 
+
+        </article>
+
+
+        <div class="scroll-bg">
+            <h2 style="text-align: center">Added books will appear here</h2>
+            <hr>
+            <div class="scroll-div">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <table class="u-full-width">
+                            <tbody id="book-list"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <div class="testimonial">
+            <section class="section-medium section-arrow--bottom-center section-arrow-primary-color bg-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-white text-center">
+                            <h2 class="section-title "> What Other Sellers Say About Us</h2>
+                            <p class="section-sub-title">
+                                We are a passionate e-commerce website that specializes in beautiful and easy way
+                                <br> of selling books online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-primary t-bordered">
+                <div class="container">
+
+                    <div class="row testimonial-three testimonial-three--col-three">
+
+                        <div class="col-md-4 testimonial-three-col">
+                            <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+                                <div class="testimonial-inner">
+                                    <li>
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                                            class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"
+                                            data-editor="field"
+                                            data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+                                        <p class="fs-110 font-cond-l" contenteditable="false">" A very good website to sell 
+                                             books. I surely recommend this website to all the book sellers. "</p>
+                                        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Ankit Upadhyay</h5>
+                                        <small class="font-cond case-u lts-sm fs-80 fg-text-l"
+                                            contenteditable="false">Business Man - Bangalore</small>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 testimonial-three-col">
+                            <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+                                <div class="testimonial-inner">
+                                    <li>
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                                            class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"
+                                            data-editor="field"
+                                            data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+                                        <p class="fs-110 font-cond-l" contenteditable="false">" Books 'n Books is a great website
+                                            to sell books by collecting them from your doorstep and delivering it to the customers. "</p>
+                                        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Adarsh Venkatesh</h5>
+                                        <small class="font-cond case-u lts-sm fs-80 fg-text-l"
+                                            contenteditable="false">Business Man - Kerala</small>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 testimonial-three-col">
+                            <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+                                <div class="testimonial-inner">
+                                    <li>
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                                            class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"
+                                            data-editor="field"
+                                            data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+                                        <p class="fs-110 font-cond-l" contenteditable="false">" It is a reliable website for
+                                            selling books which is a great thing for all the book sellers. "</p>
+                                        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Swathi Malhotra</h5>
+                                        <small class="font-cond case-u lts-sm fs-80 fg-text-l"
+                                            contenteditable="false">Business Woman - New Delhi</small>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 testimonial-three-col">
+                            <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+                                <div class="testimonial-inner">
+                                    <li>
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                                            class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"
+                                            data-editor="field"
+                                            data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+                                        <p class="fs-110 font-cond-l" contenteditable="false">" I have been a seller of Books 'n Books
+                                             for more than a year. And I am quite satisfied with the service they provide. "</p>
+                                        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Shubham Aggarwal</h5>
+                                        <small class="font-cond case-u lts-sm fs-80 fg-text-l"
+                                            contenteditable="false">Business Man - Mumbai</small>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 testimonial-three-col">
+                            <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+                                <div class="testimonial-inner">
+                                    <li>
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar5.png"
+                                            class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"
+                                            data-editor="field"
+                                            data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+                                        <p class="fs-110 font-cond-l" contenteditable="false">" The best feature of this platform
+                                            is that they ensures your payments are deposited directly to bank acount
+                                            within 14 days of order. "</p>
+                                        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Anubhav mukherjee</h5>
+                                        <small class="font-cond case-u lts-sm fs-80 fg-text-l"
+                                            contenteditable="false">Business Man - Kolkata</small>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 testimonial-three-col">
+                            <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+                                <div class="testimonial-inner">
+                                    <li>
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                                            class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"
+                                            data-editor="field"
+                                            data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+                                        <p class="fs-110 font-cond-l" contenteditable="false">" This is the best platform for 
+                                            selling books online as it provides fast and stress free delivery. "</p>
+                                        <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Akshay Sharma</h5>
+                                        <small class="font-cond case-u lts-sm fs-80 fg-text-l"
+                                            contenteditable="false">Business Man - Rajasthan</small>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+
+
+    <br>
+    <footer>
+        <div class="rows">
+            <div class="col">
+                <h3>BnB<div class="underline"><span></span></div>
+                </h3>
+                <p>About Us </p>
+                <p>Our Services</p>
+                <p>Privacy Policy</p>
+                <p>Affilate Program</p>
+
+            </div>
+            <div class="col">
+                <h3>Help<div class="underline"><span></span></div>
+                </h3>
+                <p>shipping</p>
+                <p>Returns</p>
+                <p>Order Status</p>
+                <p>Payment Partners</p>
+            </div>
+            <div class="col">
+                <h3>Category<div class="underline"><span></span></div>
+                </h3>
+                <p>Action and Adventure</p>
+                <p>Classics</p>
+                <p>Comics and Graphic Novel</p>
+                <p>Fantasy</p>
+                <p>Horror</p>
+            </div>
+            <div class="col">
+                <div class="social-icons">
+                    <h3>Follow Us<div class="underline"><span></span></div>
+                    </h3>
+                    <a href="https://facebook.com" id="one"><i class="fab fa-facebook-f "></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <hr>
+            <div class="hr-text">
+                Book n Books @ 2021-'30 - All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+<script src="script.js"></script>
+<script src="appes7.js"></script>
+<!-- <script src="stylefooter.css"></script> -->
+
+</html>
